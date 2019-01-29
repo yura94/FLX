@@ -140,7 +140,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  box-shadow: inset 0 -4vw 4vw -2vw rgba(0, 0, 0, 0.75);
 }
 .likes {
   position: absolute;
@@ -215,7 +214,7 @@ body {
   align-items: center;
   margin-right: 3vw;
 }
-.form p {
+.form-paragraph {
   font-size: 1.2vw;
 }
 .form input {
@@ -228,14 +227,11 @@ body {
   font-size: 1vw;
   color: #000;
 }
-.sub-button {
+.sub {
   background-color: #097774;
   color: #fff;
   padding: 0.47vw;
-  font-size: 0.9vw;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none;
+  font-size: 1%;
 }
 .footer {
   width: 100%;
@@ -250,7 +246,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-top > div {
+.top-division {
   width: 23%;
   margin-top: 5vw;
   margin-bottom: 5vw;
