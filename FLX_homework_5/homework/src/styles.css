@@ -1,0 +1,376 @@
+body {
+  font-family: roboto;
+  background: #0b192f;
+}
+/* Your styles go here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.nav {
+  width: 30vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding-right: 1vw;
+}
+[role="link"]:focus {
+  background-color: rgb(184, 184, 184, 0.2);
+}
+.wrap {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+}
+.logo {
+  cursor: pointer;
+  padding: 1vw;
+  color: #fff;
+  font-size: 30px;
+  margin: auto 0;
+}
+.nav-link {
+  cursor: pointer;
+  color: #fff;
+  padding: 2vw;
+  margin: auto 0;
+}
+.nav-link:hover {
+  background-color: rgb(184, 184, 184, 0.2);
+  border: none;
+}
+.log-color {
+  color: #b71757;
+}
+header {
+  margin-bottom: 2vh;
+  background-color: #162b4d;
+}
+.coupe-post:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.post-img1 {
+  width: 32.5vw;
+}
+.post-description {
+  width: 32.5vw;
+  display: flex;
+  flex-direction: row;
+}
+.coupe-post {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.trip {
+  width: 65vw;
+}
+.news-container {
+  width: 15vw;
+  padding-left: 1vw;
+}
+.post-img1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-description1 {
+  background-color: #b71757;
+}
+.post-description2 {
+  background-color: #0d7e71;
+}
+.post-description3 {
+  background-color: #b1660e;
+}
+.post-description4 {
+  background-color: #d12767;
+}
+.description-clock {
+  padding: 2vw;
+}
+.description-text {
+  font-size: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  color: #fff;
+}
+.description-clock {
+  display: flex;
+  flex-direction: column;
+  font-size: 3vw;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #b8b8b8;
+}
+.data-hour {
+  font-size: 3vw;
+}
+.data-month {
+  font-size: 2vw;
+}
+.description-content2,
+.description-content4 {
+  text-align: right;
+  padding-right: 5vw;
+}
+
+.description-text1,
+.description-text3 {
+  padding-left: 5vw;
+  padding-right: 4vw;
+}
+.description-text2,
+.description-text4 {
+  padding-left: 5vw;
+  padding-right: 4vw;
+  text-align: right;
+}
+.description-content1,
+.description-content3 {
+  padding-left: 5vw;
+}
+.post-img1 img:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+}
+.post-description:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+}
+.description-content {
+  color: #b8b8b8;
+}
+.summary-content {
+  background-color: #2d95bb;
+  display: flex;
+}
+.summary-text {
+  font-size: 3vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  color: #fff;
+}
+.summary-text-area {
+  padding-left: 2vw;
+  padding-bottom: 3vh;
+  padding-right: 1vw;
+  color: #b8b8b8;
+}
+.summary-data-hour {
+  font-size: 3vw;
+  padding-top: 1vh;
+  text-align: right;
+  padding-right: 1vw;
+  color: #b8b8b8;
+}
+.summary-data-month {
+  font-size: 2vw;
+  text-align: right;
+  padding-right: 1vw;
+  color: #b8b8b8;
+}
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.news-img img {
+  width: 14vw;
+}
+.news-text {
+  width: 14vw;
+  padding: 2vw;
+  background-color: #fff;
+}
+.second-news {
+  padding-top: 2vh;
+}
+.first-news-header {
+  font-size: 1.5vw;
+}
+.second-news-header {
+  font-size: 1.5vw;
+}
+.first-news-text {
+  padding-top: 2vh;
+  font-size: 1vw;
+  color: #b8b8b8;
+}
+.second-news-text {
+  padding-top: 2vh;
+  font-size: 1vw;
+  color: #b8b8b8;
+}
+.footer {
+  margin-top: 2vw;
+  background-color: #162b4d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b8b8b8;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vh;
+  padding-left: 2vw;
+  padding-bottom: 3vh;
+  font-size: 1vw;
+}
+.footer-author {
+  padding-top: 3vh;
+  padding-right: 2vw;
+  padding-bottom: 3vh;
+  width: 12vw;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+  }
+  .coupe-post {
+    display: flex;
+    flex-direction: column;
+  }
+  .post-img1,
+  .post-description {
+    width: 50vw;
+    height: 100%;
+  }
+  .summary-content {
+    width: 50vw;
+  }
+  .coupe-post:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-container,
+  .first-news {
+    width: 30vw;
+  }
+  .news-img img,
+  .news-text {
+    width: 29vw;
+  }
+  .first-news-header,
+  .second-news-header {
+    font-size: 2.5vw;
+  }
+  .first-news-text,
+  .second-news-text {
+    font-size: 1.5vw;
+  }
+  .post-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .post-description2,
+  .post-description4 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .description-clock {
+    text-align: center;
+  }
+  .description-text {
+    text-align: left;
+    font-size: 5vw;
+  }
+  .description-content {
+    text-align: left;
+  }
+  .description-content4,
+  .description-content2 {
+    padding-left: 5vw;
+  }
+  .data-hour {
+    font-size: 5vw;
+  }
+  .summary-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+  }
+  .summary-description-clock {
+    display: flex;
+    flex-direction: column;
+  }
+  .summary-data-hour {
+    text-align: center;
+    font-size: 5vw;
+  }
+  .summary-data-month {
+    text-align: center;
+  }
+  .summary-text {
+    font-size: 5vw;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .footer-text,
+  .footer-author {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrap {
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 1vh;
+  }
+  .post-img1,
+  .post-description {
+    width: 100vw;
+    height: 100%;
+  }
+  .summary-content {
+    width: 100vw;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-container,
+  .first-news {
+    width: 100vw;
+  }
+  .news-img img,
+  .news-text {
+    width: 100vw;
+  }
+  .first-news-header,
+  .second-news-header {
+    font-size: 5vw;
+    padding-left: 2vw;
+  }
+  .first-news-text,
+  .second-news-text {
+    font-size: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .footer-text,
+  .footer-author {
+    font-size: 3vw;
+  }
+}
