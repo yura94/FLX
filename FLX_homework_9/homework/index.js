@@ -38,16 +38,16 @@ function getAmountOfAdultPeople(data) {
 }
 
 function getGreenAdultBananaLovers(data) {
-  function goodFilter(el) {
-    return (
-      el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"
-    );
-  }
-  const newArray = filterArray(data, goodFilter);
-  function arrWithName(el) {
-    return el.name;
-  }
-  return mapArray(newArray, arrWithName);
+  return mapArray(
+    filterArray(data, function(el) {
+      return (
+        el.age > 18 && el.favoriteFruit === "banana" && el.eyeColor === "green"
+      );
+    }),
+    function(el) {
+      return el.name;
+    }
+  );
 }
 
 function keys(obj) {
