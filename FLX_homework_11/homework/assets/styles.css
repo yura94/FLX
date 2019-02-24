@@ -1,0 +1,54 @@
+/* Your styles goes here */
+#wrapper {
+  border: 1px solid grey;
+  width: 30vw;
+  min-height: 50vh;
+  margin: 10vh auto;
+  padding-right: 2vw;
+  padding-left: 1vw;
+  position: relative;
+}
+#title {
+  text-align: center;
+  font-size: 25px;
+}
+#inputContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 2vh;
+}
+#inputText {
+  width: 90%;
+  margin: auto;
+}
+#cat_img {
+  width: 5vw;
+  position: absolute;
+  bottom: 1vh;
+  left: 13.5vw;
+}
+#buttonPlus {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.material-icons {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.task_list {
+  margin-bottom: 10vh;
+  padding: 0px;
+}
+.done {
+  padding-left: 10px;
+  vertical-align: middle;
+}
